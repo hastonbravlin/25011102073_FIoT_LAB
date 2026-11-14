@@ -11,7 +11,7 @@
 ## 1. Project Overview & Problem Statement
 This capstone IoT project implements an end-to-end smart microclimate monitoring and comparison system. The objective is to:
 1. Capture real-time ambient physical measurements—temperature, relative humidity, and barometric pressure—using a **Bosch Sensortec BME280** digital sensor interfaced with an **STM32F401RE** microcontroller over the $\text{I}^2\text{C}$ bus.
-2. Package and publish the compensated sensor data as formatted JSON telemetry over Wi-Fi via an **ESP8266** modem using the **MQTT** protocol (`broker.emqx.io:1883`, topic `rithvic/weather/bme280`).
+2. Package and publish the compensated sensor data as formatted JSON telemetry over Wi-Fi via an **ESP8266** modem using the **MQTT** protocol (`broker.emqx.io:1883`, topic `haston/weather/bme280`).
 3. Ingest both the live MQTT sensor telemetry stream and regional ground-truth macroclimate weather data from the **OpenWeatherMap REST API** into a **Node-RED** analytics engine.
 4. Compute real-time mathematical deltas ($\Delta T$, $\Delta H$, $\Delta P$) between localized indoor microclimate readings and regional outdoor weather conditions.
 5. Execute an intelligent rule-based recommendation engine that evaluates human thermal comfort, natural ventilation viability, dehumidification requirements, and localized barometric storm warnings.

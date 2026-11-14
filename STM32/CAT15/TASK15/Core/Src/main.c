@@ -57,7 +57,7 @@ struct bme280_settings settings;
 MQTT_InitTypeDef_t mqttConfig;
 
 char mqttMessage[100];
-char mqttTopic[] = "rithvic/weather/bme280";
+char mqttTopic[] = "haston/weather/bme280";
 
 uint8_t bme280_address;
 int8_t rslt;
